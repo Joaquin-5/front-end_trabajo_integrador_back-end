@@ -5,34 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registrar Paciente - Clínica Odontológica</title>
-    <script src="./js/paciente.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/paciente.css" />
   </head>
   <body>
     <h1>Registrar Paciente</h1>
     <form action="/" method="POST">
-      <div class="datos-paciente">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" />
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido" />
-        <label for="dni">DNI</label>
-        <input type="number" name="dni" id="dni" />
-        <label for="fechaDeAlta">Fecha de alta</label>
-        <input type="datetime" name="fechaDeAlta" id="fechaDeAlta" />
-      </div>
-      <div class="datos-domicilio">
-        <label for="calle">Calle</label>
-        <input type="text" name="calle" id="calle" />
-        <label for="numero">Numero</label>
-        <input type="text" name="numero" id="numero" />
-        <label for="localidad">Localidad</label>
-        <input type="text" name="localidad" id="localidad" />
-        <label for="provincia">Provincia</label>
-        <input type="text" name="provincia" id="provincia" />
-      </div>
+      <h2>Datos del paciente</h2>
+        <div class="datos-paciente">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+          <label for="dni">DNI</label>
+          <input type="number" name="dni" id="dni" />
+        </div>
 
-      <button type="submit">Registrar</button>
+        <h2>Datos del Domicilio</h2>
+        <div class="datos-domicilio">
+          <label for="calle">Calle</label>
+          <input type="text" name="calle" id="calle" />
+          <label for="numero">Numero</label>
+          <input type="text" name="numero" id="numero" />
+          <label for="localidad">Localidad</label>
+          <input type="text" name="localidad" id="localidad" />
+          <label for="provincia">Provincia</label>
+          <input type="text" name="provincia" id="provincia" />
+        </div>
+
+        
+        <button type="submit">Registrar</button>
+        <div id="mensajes-error"></div>
     </form>
-    <div id="mensajes-error"></div>
+
+    <script src="./js/fetchData.js"></script>
+    <script src="./js/paciente.js"></script>
   </body>
 </html>

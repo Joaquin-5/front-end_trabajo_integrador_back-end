@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 2% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.datos-paciente,
+.datos-domicilio {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #3f51b5;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a237e;
+  display: block;
+}
+
+
